@@ -1,0 +1,473 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Estyle Header */
+
+header{
+    background-color: #121427;
+    text-align: center;
+}
+header h1{
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 175px;
+    font-size: 100px;
+    font-family: 'Cormorant', serif; 
+    font-style: italic;
+    font-weight: 300;
+    border-bottom: 1px solid #e6c619;
+    margin-bottom: 0;
+}
+header h2{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 175px;
+    font-size: 50px;
+    font-family: 'Cormorant', serif; 
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+/* End Estyle Header */
+
+ /* Estyle Nav Bootstrap */
+ .navbootstrap {
+    background-color: #121427;
+    border-top: 1px solid #e6c619;
+    padding: 10px;
+    font-family: 'Josefin Slab', serif;
+ }
+ /* End Estyle Nav Bootstrap */
+
+/* Estyle Nav */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #121427;
+    position: sticky;
+    top: 0px;
+    border-top: 1px solid #e6c619;
+}
+nav li{
+    
+    margin-top: 4px;
+    padding-bottom: 5px;
+    text-align: center;
+    display: inline-block;
+}
+nav li a{
+    color: white;
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #e6c619;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 100;
+}
+nav li a:hover {
+    color: #e6c619;
+}
+
+/* End Estyle Nav */
+
+/* Main */
+
+main{
+    background-color: rgb(222,222,222);
+    display: flex;
+    justify-content: space-around;
+}
+main section{
+    background-color: rgba(247,247,247,0.2);
+    width: 80%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+/* End Main */
+
+/* Footer */
+
+footer{
+    border-top: 2px solid #e6c619;
+    background-color: #181a33;
+    color: white;
+    position: relative;
+}
+footer iframe{
+    margin: 15px;
+    margin-left: 12%;
+    display: inline-block;
+}
+footer div{
+    position: absolute;
+    top: 60%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+}
+footer div div{
+    position: relative;
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+    width: 400px;
+
+}
+
+/* End Footer */
+
+/* Home */
+
+/* Home Main Section Grid */
+
+.index-main-section{
+    display: grid;
+    row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        "text-one text-one"
+        "img-one  text-two"
+        "img-one  text-three"
+        "img-two  text-four"
+        "img-two  text-four";
+    
+}
+.text-one-index{
+    grid-area: text-one;
+}
+.text-two-index{
+    grid-area: text-two;
+}
+.text-three-index{
+    grid-area: text-three;
+}
+.text-four-index{
+    grid-area: text-four;
+}
+.img-one-index{
+    grid-area: img-one;
+}
+.img-two-index{
+    grid-area: img-two;
+}
+
+/* End Home Main Section Grid */
+
+/* Home Main */
+
+.maintext{
+    text-align:justify;
+    margin: auto;
+    font-weight: 300;
+    width: 80%;
+    font-size: 25px;
+    font-family: 'Faustina', serif;
+}
+.maintext-two{
+    text-align:justify;
+    margin: auto;
+    font-weight: 300;
+    width: 80%;
+    font-size: 20px;
+    font-family: 'Faustina', serif;
+}
+.homeimage{
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* End Home Main */
+
+/* End Home */
+
+/* Contact Style */
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px dotted #000000;
+    outline: none;
+}
+input[type=text], 
+input[type=email], 
+input[type=number]{
+    transition: 0.3s ease-in-out;
+    width: 60%;
+}
+input[type=text]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus{
+    width: 100%;
+    background-color: rgb(222,222,222);
+    padding-top: 10px;
+    font-size: 25px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+textarea{
+    background-color: transparent;
+}
+.form{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.formdatospersonales{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.consultaestadocivil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.consultaestadocivilcontenido{
+    margin-left: 5%;  
+    width: 100%; 
+}
+.consultahorario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.consultahorariocontenido{
+    margin-left: 5%;
+    width: 100%;
+}
+.consulta{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.consulta textarea:focus{
+    background-color: rgb(222,222,222);
+    font-size: 25px;
+    transition: 0.3s ease-in-out
+}
+
+/* End Contact Style */
+
+/* Media Querie */
+
+/* Tablet */
+
+@media only screen and (max-width: 1025px) {
+    header h1{
+        font-size: 75px;
+        padding-top: 110px;
+    }
+    header h2{
+        padding-bottom: 120px;
+        font-size: 30px;
+    }
+    nav li a{
+        padding: 10px 30px 10px 30px;
+        font-size: 20px;
+    }
+    footer div div{
+        font-size: 18px;
+        width: auto;
+    }
+    .index-main-section{
+        row-gap: 15px;
+        grid-template-areas: 
+            "text-one  text-one"
+            "img-one   img-one"
+            "text-two  text-three"
+            "img-two   img-two"
+            "text-four   text-four";   
+    }
+    .maintext{
+        font-size: 20px;
+    }
+    .maintext-two{
+        font-size: 15px;
+    }
+    .homeimage{
+        width: 70%;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 826px) {
+    /* Estyle Header */
+    header h1{
+        font-size: 65px;
+        padding-top: 100px;
+    }
+    header h2{
+        padding-bottom: 110px;
+        font-size: 25px;
+    }
+    /* End Estyle Header */
+    /* Estyle Nav */
+    nav li a{
+        padding: 7px 15px 7px 15px;
+        font-size: 15px;
+    }
+    footer div div{
+        font-size: 14px;
+    }
+    /* End Estyle Nav */
+    /* home */
+    .maintext{
+        font-size: 15px;
+    }
+    .maintext-two{
+        font-size: 12px;
+    }
+    /* End Home */
+    /* Contact Style */
+    input[type=text]:focus, 
+    input[type=email]:focus, 
+    input[type=number]:focus{
+        width: 80%;
+        font-size: 15px;
+    }
+    .form{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .formdatospersonales{
+        width: 100%;
+        height: 800px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between
+    
+    }
+    .consultaestadocivil{
+        flex-direction: column;
+    }
+    .consultahorario{
+        flex-direction: column;
+    }
+    .consulta{
+        height: 300px;
+    }
+    .consulta textarea:focus{
+        background-color: rgb(222,222,222);
+        font-size: 16px;
+        transition: 0.3s ease-in-out
+    }
+    /* End Contact Style */
+}
+
+/* End Tablet */
+
+/* Mobile */
+
+@media only screen and (max-width: 540px) {
+    /* Estyle Header */
+    header h1{
+        padding-top: 50px;
+        font-size: 50px;
+    }
+    header h2{
+        padding-top: 6px;
+        padding-bottom: 50px;
+        font-size: 30px;
+    }
+    /* End Estyle Header */
+    /* Estyle Nav */
+    nav li a{
+        padding: 3px 5px 3px 5px;
+        font-size: 12px;
+    }    
+    /* End Estyle Nav */
+    /* Footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    footer iframe{
+        padding: 10px 5px 10px 5px;
+        width: 90%;
+        margin: 0px;
+        display: block;
+    }
+    footer div{
+        position: static;
+        top: 0%;
+        left: 0%;
+        transform: none;
+    }
+    footer div div{
+        position: static;
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        width: 200px;
+    }
+    /* End Footer */
+    /* home */
+    .index-main-section{
+        display: grid;
+        row-gap: 20px;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+            "text-one"
+            "img-one"
+            "text-two"
+            "text-three"
+            "img-two"
+            "text-four";      
+    }    
+    .homeimage{
+        width: 80%;
+        padding-right: 50px;
+    }
+
+    /* End Home */
+    /* Contact Style */
+    .consulta{
+        padding-top: 30px;
+        height: 500px;
+    }
+    .consulta textarea{
+        width: 80%;
+    }
+    .consulta textarea:focus{
+        width: 100%;
+    }
+    input[type=reset],
+    input[type=submit] {
+        padding-top: 50px;
+    }
+    /* End Contact Style */
+}
