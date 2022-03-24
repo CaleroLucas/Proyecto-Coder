@@ -471,3 +471,18 @@ textarea{
     }
     /* End Contact Style */
 }
+
+ /* equipo style  */
+
+ .section_equipo h3{
+    border-bottom: 1px solid #e6c619;
+ }
+ .section_equipo img{
+    max-width: 30%;
+ }
+ .section_equipo p{
+    padding: 0 25%;
+ }
+ .section_equipo h4:nth-of-type(2){
+    border-top: 1px solid #e6c619;
+ }
